@@ -57,6 +57,7 @@ class Counter {
    */
   constructor(initialNumber) {
     // ✨ initialize whatever properties are needed
+    this.count = initialNumber
   }
 
   /**
@@ -73,9 +74,12 @@ class Counter {
    */
   countDown() {
     // ✨ implement
+    if(this.count > 0){
+      return this.count--
+    }
+      return this.count
   }
 }
-
 class Seasons {
   /**
    * [Exercise 5A] Seasons creates a seasons object
